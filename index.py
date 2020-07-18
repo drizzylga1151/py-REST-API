@@ -1,10 +1,10 @@
-import flask,pg8000,methods, os
-from flask import request, jsonify, render_template
+import methods, os
+from flask import render_template, Flask
 
 CATS_FOLDER = os.path.join('static', 'cats')
 DOGS_FOLDER = os.path.join('static', 'dogs')
 
-app = flask.Flask(__name__)
+app = Flask(__name__)
 app.config["DEBUG"] = True
 app.config['UPLC_FOLDER'] = CATS_FOLDER
 app.config['UPLD_FOLDER'] = DOGS_FOLDER

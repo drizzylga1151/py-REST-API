@@ -1,6 +1,7 @@
 import os,random
 
 def getcat():
+    
     cats = os.listdir("./static/cats")
 
     cat = random.choice(cats)
